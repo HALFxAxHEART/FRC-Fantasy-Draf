@@ -1,9 +1,19 @@
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+<script>
+  import EventPicker from '../components/EventPicker.svelte';
+  import DarkModeToggle from '../components/DarkModeToggle.svelte';
+</script>
 
-<style lang="postcss">
-  :global(html) {
-    background-color: theme(colors.gray.100);
+<main>
+  <DarkModeToggle />
+  <EventPicker />
+</main>
+
+<style>
+  main {
+    padding: 1em;
+    max-width: 800px;
+    margin: 0 auto;
   }
+
+  /* Add any additional styling needed for the components here */
 </style>

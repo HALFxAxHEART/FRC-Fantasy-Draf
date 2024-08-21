@@ -1,3 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Light mode (default) */
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --box-background-color: #ffffff;
+    --box-border-color: #cccccc;
+    --dropdown-background-color: #ffffff;
+    --dropdown-border-color: #cccccc;
+    --button-background: #333;
+    --button-color: #fff;
+    --button-background-hover: #555;
+}
+  
+/* Dark mode styles */
+.dark {
+    --background-color: #333;
+    --text-color: #fff;
+    --box-background-color: #2e2e2e;
+    --box-border-color: #333333;
+    --dropdown-background-color: #333333;
+    --dropdown-border-color: #444444;
+    --button-background: #aaa;
+    --button-color: #000;
+    --button-background-hover: #888;
+}
+  
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
